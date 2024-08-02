@@ -1,0 +1,19 @@
+﻿@model SaarSystem.Models.ErrorViewModel
+
+@{
+    ViewData["Title"] = "Error";
+}
+
+<h1 class="text-danger">Error.</h1>
+<h2 class="text-danger">An error occurred while processing your request.</h2>
+<div>
+    <h3>Request ID: <code>@Model.RequestId</code></h3>
+    <p>
+        @if (Model.ShowRequestId)
+        {
+        <p>
+            Please contact support with the Request ID above.
+        </p>
+        }
+    </p>
+</div>
